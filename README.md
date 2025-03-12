@@ -1,5 +1,5 @@
 # PII-Detection-Text-Analytics
-How to leverage the PII Redaction Container to redact text...
+How to leverage the PII Redaction Container to redact text.  The Redaction container can be run in a disconnecte3d mode if needed for customers that have strict policies around dealing with PII, this solution can help solve those challenges.
 
 ## Typical Use Cases
 - ​Mask **sensitive information** to avoid a leak, inappropriate handling or data bias
@@ -18,4 +18,17 @@ In this scenario I will walk you through quickly setting up the PII Redaction Co
 
 ```
       az containerapp create --name pii-detection-app --resource-group rg-pii-test --image mcr.microsoft.com/azure-cognitive-services/textanalytics/pii:latest --environment managedEnvironment-rgpiiai-8302 --cpu 4 --memory 8Gi --min-replicas 1 --max-replicas 3 --env-vars "Eula=accept" "Billing=https://<your-ai-language-endpoint>" "ApiKey=<your API key>" --ingress external --target-port 5000
+```
+**Important Notes:**
+- If a container environment does not exist, a new one will be created
+- Replace the endpoint and API key with your endpoint and API Key
+
+### Step 2 - Testing the solution and verifying it's up and running
+
+1. Navigate to the deployed container app:  `https://<your app>.eastus.azurecontainerapps.io/status`
+
+If everything is properly setup you will see the following JSON response:
+
+```
+   {"service":"pii","apiStatus":"Valid","apiStatusMessage":"Api Key is valid, no action needed."}
 ```
