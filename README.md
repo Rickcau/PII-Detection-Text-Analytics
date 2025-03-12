@@ -32,3 +32,8 @@ If everything is properly setup you will see the following JSON response:
 ```
    {"service":"pii","apiStatus":"Valid","apiStatusMessage":"Api Key is valid, no action needed."}
 ```
+
+2. Now, it's test the redaction capabilities.
+Leverage your favorite HTTP tool, Insomnia or Bruno or others to send a POST request to the `analyze-text’ API.
+
+![POST-Request](/images/POST-Request.jpg)
