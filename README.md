@@ -6,5 +6,6 @@ How to leverage the PII Redaction Container to redact text...
 - **Auto label and classify documents** based on the sensitivity
 - Intermediary step before sending to LLM
 
+![redacted-sample](/images/redacted-sample.jpg)
 
 
