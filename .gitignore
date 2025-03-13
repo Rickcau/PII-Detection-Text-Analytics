@@ -11,7 +11,7 @@ App.config
 TBD*
 
 # Presentation Files
-presentation/
+
 # Next.js build output
 .next/
 out/
