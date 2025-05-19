@@ -2,7 +2,7 @@
 How to leverage the PII Redaction Container to redact text.  The Redaction container can be run in a disconnecte3d mode if needed for customers that have strict policies around dealing with PII, this solution can help solve those challenges.
 
 ## Azure AI Language Service
-You can leverage the [AI Language Service to redact PII](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii) data. 
+You can leverage the [AI Language Service to redact PII](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii) data. You can also deploy this as a container, which I have outlined the steps of how to do this using Azure Container Apps below.
 
 ## Typical Use Cases
 - ​Mask **sensitive information** to avoid a leak, inappropriate handling or data bias
