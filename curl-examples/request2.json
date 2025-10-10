@@ -1,0 +1,19 @@
+{
+    "kind": "PiiEntityRecognition",
+    "parameters": {
+        "modelVersion": "latest",
+        "piiCategories" :
+            [
+                "Person"
+            ]
+    },
+    "analysisInput": {
+        "documents": [
+            {
+                "id": "1",
+                "language": "en",
+                "text": "We went to Contoso foodplace located at downtown Seattle last week for a dinner party, and we adore the spot! They provide marvelous food and they have a great menu. The chief cook happens to be the owner (I think his name is John Doe) and he is super nice, coming out of the kitchen and greeted us all. We enjoyed very much dining in the place! The pasta I ordered was tender and juicy, and the place was impeccably clean. You can even pre-order from their online menu at www.contosofoodplace.com, call 112-555-0176 or send email to order@contosofoodplace.com! The only complaint I have is the food didn't come fast enough. Overall I highly recommend it!"
+            }
+        ]
+    }
+}
